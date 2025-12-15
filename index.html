@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniPortal Student Gateway</title>
+    <!-- Fonts: Fraunces and Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;500;600&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'fraunces': ['Fraunces', 'serif'],
+              'source': ['"Source Sans Pro"', 'sans-serif'],
+            },
+            colors: {
+              // Semantic Color Mapping from Design Tokens
+              'primary-surface': '#ffffff',
+              'secondary-surface': '#f4f4f4',
+              'tertiary-surface': '#f1f5f1',
+              
+              'primary-text': '#222222',
+              'secondary-text': '#414141',
+              'tertiary-text': '#707070',
+              
+              'brand-main': '#000f46', // brand-1100
+              
+              'primary-cta': '#47c8f0', // blue-400
+              'primary-hover': '#81daf5', // blue-300
+              'input-hover': '#e3f6fd', // blue-100
+              
+              'success-msg': '#60751f', // green-600
+              'success-bg': '#f2f6e2', // green-100
+              
+              'warning-msg': '#ac5907', // yellow-600
+              'warning-bg': '#fff5cb', // yellow-100
+              
+              'error-msg': '#db1927', // red-600
+              'error-bg': '#fff1f2', // red-100
+              
+              'info-msg': '#1f7593', // blue-600
+              'info-bg': '#e3f6fd', // blue-100
+              
+              'focus-ring': '#0d6cdd', // interactive-600
+              'border-base': '#e0e0e0', // neutral-200
+              'link': '#003f8b', // interactive-800
+            },
+            boxShadow: {
+              'portal-card': '0 8px 16px 0 rgba(0, 0, 0, 0.08)', // Portal_FlexCard_Shadow
+              'portal-card-initial': '0 8px 16px 0 rgba(0, 0, 0, 0)', // Portal_FlexCard_Shadow_Initial
+            },
+            spacing: {
+              'xs': '8px',
+              's': '12px',
+              'm': '16px',
+              'l': '24px',
+              'xl': '36px',
+              'xxl': '60px',
+              'xxxl': '100px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #f4f4f4; /* secondary-surface */
+        color: #222222; /* primary-text */
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fraunces', serif;
+      }
+      /* Custom scrollbar for sidebar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f4f4f4;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cdcdcd;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #bababa;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
